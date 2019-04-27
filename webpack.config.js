@@ -1,7 +1,14 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const path = require('path');
 
 module.exports = {
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    publicPath: './',
+    filename: 'scripts/bundle.js',
+  },
   module: {
     rules: [
       {
@@ -31,8 +38,8 @@ module.exports = {
     }),
     new CopyPlugin([
       {
-        from: './src/assets/img',
-        to: 'dist/assets',
+        from: './src/assets',
+        to: 'assets',
       },
     ]),
   ],

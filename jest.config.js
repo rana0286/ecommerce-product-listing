@@ -14,6 +14,7 @@ module.exports = {
     '!**/*.spec.{js,jsx}',
   ],
   testResultsProcessor: './node_modules/jest-html-reporter',
+  // Unit test coverage threshhold
   coverageThreshold: {
     global: {
       branches: 90,
@@ -22,11 +23,13 @@ module.exports = {
       statements: 95,
     },
   },
+  //  Allow to transpile js and jsx file using babel
   transform: {
-    '^.+\\.js|.jsx?$': 'babel-jest',
+    '^.+\\.(js|jsx)?$': 'babel-jest',
   },
   // An array of file extensions which modules are using
   moduleFileExtensions: ['js', 'json', 'jsx'],
+  // Indicates whether each individual test should be reported during the run
   verbose: true,
   // The paths to modules that run some code to configure or set up the testing environment before each test
   setupFiles: ['<rootDir>/enzyme.config.js'],
