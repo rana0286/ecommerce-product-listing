@@ -1,0 +1,39 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# IDE - VSCode
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+.sass-cache
+connect.lock
+typings
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#test reporters
+dashboard/
+test-report.html
+
+# Dependency directories
+node_modules/
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
