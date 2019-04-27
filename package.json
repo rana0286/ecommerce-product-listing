@@ -6,8 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --open --hot --mode development",
     "build": "rm -rf dist && webpack --mode production",
-    "test": "npm run lint && jest --config",
-    "lint": "eslint src -c .eslintrc.js"
+    "test": "npm run lint && npm run sass-lint && jest --config",
+    "lint": "eslint src -c .eslintrc.js",
+    "sass-lint": "sass-lint -c ./.sass-lint.yml '**/*.scss' -v -q"
   },
   "husky": {
       "hooks": {
