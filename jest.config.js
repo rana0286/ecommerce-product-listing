@@ -27,8 +27,9 @@ module.exports = {
   transform: {
     '^.+\\.(js|jsx)?$': 'babel-jest',
   },
+  testMatch: ['**/__tests__/**/*.(js|jsx)?(x)', '**/?(*.)+(spec|test).(js|jsx)?(x)'],
   // An array of file extensions which modules are using
-  moduleFileExtensions: ['js', 'json', 'jsx'],
+  moduleFileExtensions: ['js', 'jsx'],
   // Indicates whether each individual test should be reported during the run
   verbose: true,
   // The paths to modules that run some code to configure or set up the testing environment before each test

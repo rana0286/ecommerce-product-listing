@@ -5,7 +5,7 @@ module.exports = {
     node: true,
     jest: true
   },
-  extends: ['airbnb-base', 'plugin:prettier/recommended', 'plugin:react/recommended'],
+  extends: ['plugin:react/recommended'],
   parser: "babel-eslint",
   globals: {
     Atomics: 'readonly',
@@ -14,24 +14,18 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true
+    }
   },
   rules: {
     "max-len": [1, 120, 2, {"ignoreComments": true}],
     "indent": ["error", 2],
     "semi": "error",
     "no-console": "off",
-    "prettier/prettier": [
-      "error",
-      {
-        "trailingComma": "all",
-        "singleQuote": true,
-        "printWidth": 120
-
-      }
-    ]
   },
-
   plugins: [
-    "prettier"
+    "react",
+    "jsx-a11y",
   ]
 };
