@@ -1,11 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component, Suspense, lazy } from 'react';
 import PropTypes from 'prop-types';
 import noop from 'lodash/noop';
 import { connect } from 'react-redux';
 import { copyProvider } from '../utils';
 import { productSizeOptions } from '../constants';
-import { ProductDetailsRoot } from '../components/composer';
 import { getProductDetails, filterProductDetails } from '../actions';
+
+const ProductDetailsRoot = lazy(() => import('../components/composer'));
 
 import './ProductDetailsPage.scss';
 
@@ -24,19 +25,21 @@ export class ProductDetailsPage extends Component {
   }
   render() {
     const { filteredProductList } = this.props;
-    return (filteredProductList.length ? <div className="main-container">
-      <ProductDetailsRoot
-        headingLabel={copyProvider('womensTopHeading')}
-        onSelect={this.filterProducts}
-        productSizeOptions={productSizeOptions}
-        productsList={filteredProductList}
-      />
-    </div> : <div className="loader">Loading...</div>);
+    return (<Suspense fallback={<div className="loader">Loading...</div>}>
+      <div className="main-container">
+        <ProductDetailsRoot
+          headingLabel={copyProvider('womensTopHeading')}
+          onSelect={this.filterProducts}
+          productSizeOptions={productSizeOptions}
+          productsList={filteredProductList}
+        />
+      </div>
+    </Suspense>);
   }
 }
 
 ProductDetailsPage.propTypes = {
-  filteredProductList:  PropTypes.arrayOf(
+  filteredProductList: PropTypes.arrayOf(
     PropTypes.shape({
       productImage: PropTypes.string.isRequired,
       productName: PropTypes.string.isRequired,
@@ -53,7 +56,7 @@ ProductDetailsPage.defaultValue = {
   filterProductDetails: noop,
 };
 
-export const mapStateToProps = ({filteredProductList}) => {
+export const mapStateToProps = ({ filteredProductList }) => {
   return { filteredProductList };
 };
 

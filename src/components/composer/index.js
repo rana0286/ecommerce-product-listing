@@ -1,5 +1,3 @@
 import ProductDetailsRoot from './ProductDetailsRoot/ProductDetailsRoot';
 
-export {
-  ProductDetailsRoot,
-};
+export default ProductDetailsRoot;
