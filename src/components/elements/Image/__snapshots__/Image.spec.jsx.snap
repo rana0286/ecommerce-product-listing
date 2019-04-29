@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/elements/Header Header component should render 1`] = `
+<img
+  alt="image default"
+  className="image"
+  src="/testPath"
+/>
+`;

@@ -18,7 +18,6 @@ const Image = ({
     src={src}
     alt={alt}
     {...other}
-    onError={(e) => { e.target.onerror = null; e.target.src = placeholderSrc; }}
   />
 
 );

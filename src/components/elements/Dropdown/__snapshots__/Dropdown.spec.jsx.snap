@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/elements/Dropdown Drop down component should render 1`] = `
+<div
+  className="select-box "
+>
+  <label
+    className="select-box__label"
+    htmlFor="select-box"
+  >
+    
+  </label>
+  <select
+    className="select-box__select"
+    id="select-box"
+    onChange={[Function]}
+    onSelect={[MockFunction]}
+    selected=""
+    value=""
+  >
+    <option
+      value=""
+    >
+      Filter by size
+    </option>
+    <option
+      value="XS"
+    >
+      XS
+    </option>
+    <option
+      value="S"
+    >
+      S
+    </option>
+    <option
+      value="M"
+    >
+      M
+    </option>
+    <option
+      value="L"
+    >
+      L
+    </option>
+    <option
+      value="XL"
+    >
+      XL
+    </option>
+  </select>
+</div>
+`;

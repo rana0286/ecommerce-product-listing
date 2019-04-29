@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/elements/Header Header component should render 1`] = `
+<div
+  className="product-list-header"
+>
+  <h1>
+    heading
+  </h1>
+</div>
+`;

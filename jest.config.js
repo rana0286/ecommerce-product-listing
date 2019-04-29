@@ -7,8 +7,13 @@ module.exports = {
   coverageReporters: ['json', 'lcov', 'text', 'text-summary'],
   collectCoverageFrom: [
     'src/**',
-    '!src/index.js',
-    '!**/*.test.{js,jsx}',
+    '!src/app.jsx',
+    '!src/utils/**',
+    '!src/store/**',
+    '!src/actions/**',
+    '!src/reducers/**',
+    '!**/*.specs.{js,jsx}',
+    '!**/index.{js,jsx}',
     '!**/node_modules/**',
     '!**/vendor/**',
     '!**/*.spec.{js,jsx}',
@@ -27,7 +32,12 @@ module.exports = {
   transform: {
     '^.+\\.(js|jsx)?$': 'babel-jest',
   },
-  testMatch: ['**/__tests__/**/*.(js|jsx)?(x)', '**/?(*.)+(spec|test).(js|jsx)?(x)'],
+  moduleNameMapper: {
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+     "<rootDir>/__mocks__/fileMock.js",
+    "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
+  },
+  testMatch: ['**/?(*.)+(spec|test).(js|jsx)?(x)'],
   // An array of file extensions which modules are using
   moduleFileExtensions: ['js', 'jsx'],
   // Indicates whether each individual test should be reported during the run

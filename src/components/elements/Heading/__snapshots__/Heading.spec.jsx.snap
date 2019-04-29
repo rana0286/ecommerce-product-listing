@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/elements/Header Header component should render 1`] = `
+<h1
+  Variation="h2"
+  className="heading heading--h1"
+>
+  Test heading
+</h1>
+`;
