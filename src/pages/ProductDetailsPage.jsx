@@ -23,14 +23,15 @@ export class ProductDetailsPage extends Component {
     this.props.filterProductDetails(value);
   }
   render() {
-    return (<div className="main-container">
+    const { filteredProductList } = this.props;
+    return (filteredProductList.length ? <div className="main-container">
       <ProductDetailsRoot
         headingLabel={copyProvider('womensTopHeading')}
         onSelect={this.filterProducts}
         productSizeOptions={productSizeOptions}
-        productsList={this.props.filteredProductList}
+        productsList={filteredProductList}
       />
-    </div>);
+    </div> : <div className="loader">Loading...</div>);
   }
 }
 

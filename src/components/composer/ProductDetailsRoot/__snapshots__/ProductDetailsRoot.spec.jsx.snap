@@ -50,24 +50,35 @@ exports[`src/components/composer/ProductDetailsRoot ProductDetailsRoot component
       className="card"
     >
       <img
+        alt="Striped shirt"
         className="image"
-        src="./assets/img/products/undefined"
+        src="./assets/img/products/product-1.jpg"
       />
       <div
         className="product"
       >
         <div
           className="tag"
-        />
+        >
+          <div
+            className="tag--sale"
+          >
+            Sale
+          </div>
+        </div>
         <div
           className="description"
         >
           <div
             className="description__name"
-          />
+          >
+            Striped shirt
+          </div>
           <div
             className="description__price"
-          />
+          >
+            $18.88
+          </div>
         </div>
       </div>
     </li>

@@ -8,3 +8,13 @@ $font-color: #333333;
   max-width: $main-container-width;
 
 }
+
+.loader {
+  font-size: 30px;
+  font-weight: 500;
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

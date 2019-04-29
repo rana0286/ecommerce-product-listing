@@ -21,7 +21,7 @@ const product = {
 
 const exStore = {
   getState: () => ({
-    filteredProductList: [product],
+    filteredProductList: [],
   }),
   subscribe: x => x,
   dispatch: x => x,
