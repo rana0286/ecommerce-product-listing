@@ -1,6 +1,7 @@
-$lightGrey: #e1e1e1;
+$light-grey: #e1e1e1;
+
 .card {
-  border: 1px solid $lightGrey;
+  border: 1px solid $light-grey;
   display: flex;
   flex: 1 1 290px;
   flex-direction: column;
@@ -15,7 +16,7 @@ $lightGrey: #e1e1e1;
   .product {
     padding: 0 10px;
 
-    &__description {
+    .description {
       align-items: baseline;
       display: flex;
       justify-content: space-between;

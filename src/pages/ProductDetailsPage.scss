@@ -2,8 +2,9 @@ $main-container-width: 1204px;
 $font-color: #333333;
 
 .main-container {
-  font-family: Arial,Helvetica,sans-serif;
-  max-width: $main-container-width;
+  color: $font-color;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
-  color: $font-color
+  max-width: $main-container-width;
+
 }

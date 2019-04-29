@@ -37,9 +37,9 @@ const ProductDetailsCard = ({ product }) => (
         )}
         {product.isSale && <Tag tagType="sale" tagLabel={productTagTypes.sale} />}
       </div>
-      <div className="product__description">
-        <div className="product__description__name">{product.productName}</div>
-        <div className="product__description__price">{product.price}</div>
+      <div className="description">
+        <div className="description__name">{product.productName}</div>
+        <div className="description__price">{product.price}</div>
       </div>
     </div>
   </li>
