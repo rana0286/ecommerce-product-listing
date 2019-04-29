@@ -42,12 +42,16 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/assets/index.html',
+      template: './src/assets/index.html',
+      favicon: './src/assets/icon/favicon.ico',
     }),
     new CopyPlugin([
       {
         from: './src/assets',
         to: 'assets',
+      },
+      {
+        from: './src/assets/icon/favicon.ico',
       },
     ]),
   ],

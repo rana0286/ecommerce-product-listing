@@ -31,10 +31,12 @@ const ProductDetailsCard = ({ product }) => (
       alt={product.productName}
     />
     <div className="product">
-      {product.isExclusive && (
-        <Tag tagType="exclusive" tagLabel={productTagTypes.exclusive} />
-      )}
-      {product.isSale && <Tag tagType="sale" tagLabel={productTagTypes.sale} />}
+      <div className="tag">
+        {product.isExclusive && (
+          <Tag tagType="exclusive" tagLabel={productTagTypes.exclusive} />
+        )}
+        {product.isSale && <Tag tagType="sale" tagLabel={productTagTypes.sale} />}
+      </div>
       <div className="product__description">
         <div className="product__description__name">{product.productName}</div>
         <div className="product__description__price">{product.price}</div>

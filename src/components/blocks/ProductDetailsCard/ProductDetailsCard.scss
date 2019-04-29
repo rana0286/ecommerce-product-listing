@@ -1,4 +1,4 @@
-$lightGrey: '#e1e1e1';
+$lightGrey: #e1e1e1;
 .card {
   border: 1px solid $lightGrey;
   display: flex;
@@ -10,6 +10,7 @@ $lightGrey: '#e1e1e1';
   margin-left: -1px;
   margin-top: -1px;
   padding: 20px 5px;
+
 
   .product {
     padding: 0 10px;
