@@ -1,15 +1,18 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
+import './Dropdown.scss';
+
 class Dropdown extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
       value: this.props.value,
     };
+    this.changeHandler = this.changeHandler.bind(this);
   }
 
-  onChange(event) {
+  changeHandler(event) {
     const { value } = event.target;
     const { onSelect } = this.props;
     onSelect(value);
@@ -18,14 +21,14 @@ class Dropdown extends PureComponent {
   }
 
   render() {
-    const { options, className, label } = this.props;
+    const { options, className, label, ...rest} = this.props;
     const { value } = this.state;
     return (
-      <div className={`form-group select-box ${className}`}>
-        <label className="sr-only" htmlFor="select-box">
+      <div className={`select-box ${className}`}>
+        <label className="select-box__label" htmlFor="select-box">
           {label}
         </label>
-        <select id="select-box" value={value} onChange={onChange} className="form-control">
+        <select {...rest} id="select-box" value={value} onChange={this.changeHandler} className="select-box__select">
           {options.map(option => (
             <option value={option.value} key={option.value}>
               {option.label}

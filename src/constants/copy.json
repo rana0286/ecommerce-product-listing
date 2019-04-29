@@ -1,3 +1,7 @@
 {
-  "womensTopHeading": "Women's tops"
+  "womensTopHeading": "Women's tops",
+  "productTagTypes": {
+    "exclusive": "Exclusive",
+    "sale": "Sale"
+  }
 }

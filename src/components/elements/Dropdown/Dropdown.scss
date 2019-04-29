@@ -1,1 +1,9 @@
+.select-box {
+  display: inline-block;
+  float: right;
 
+  &__select {
+    font-size: 14px;
+    width: 170px;
+  }
+}

@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react';
-import Dropdown from '../../elements/Dropdown';
+import { DropDown } from '../../elements';
 
 class ProductSizeFilter extends PureComponent {
   render() {
-    return <Dropdown {...this.props} />;
+    return <DropDown {...this.props} />;
   }
 }
 

@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+
 import './Heading.scss';
 
 class Heading extends PureComponent {
@@ -7,7 +8,7 @@ class Heading extends PureComponent {
     const { children, variation: Variation, ...rest } = this.props;
 
     return (
-      <Variation {...rest} className={`csl-heading--${Variation}`}>
+      <Variation {...rest} className={`heading heading--${Variation}`}>
         {children}
       </Variation>
     );

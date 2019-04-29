@@ -1,0 +1,23 @@
+$defaultColor: '#333333';
+$red: '#cc3333';
+$green: '#009900';
+$white: '#ffffff';
+$lightBlue: '#def1f4';
+
+.tag {
+  color: $white;
+  display: inline-block;
+  padding-top: 16px;
+
+  &--exclusive {
+    background-color: $green;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  &--sale {
+    background-color: $red;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}

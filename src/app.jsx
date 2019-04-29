@@ -1,14 +1,21 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import { ProductDetailsPage } from './pages';
+import {  configureStore, initialStore } from './store';
 
-const App = ({ data }) => <div>{data}</div>;
+const store = configureStore(initialStore);
 
-App.propTypes = {
-  data: PropTypes.string,
-};
+const renderApp = () =>
+  render(
+    <Provider store={store}>
+      <ProductDetailsPage />
+    </Provider>,
+    document.getElementById('root')
+  );
 
-App.defaultProps = {
-  data: 'Hello World',
-};
+if (process.env.NODE_ENV !== 'production' && module.hot) {
+  module.hot.accept('./pages', renderApp);
+}
 
-export default App;
+renderApp();

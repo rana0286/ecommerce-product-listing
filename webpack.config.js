@@ -3,7 +3,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/app.jsx',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: './',
@@ -26,6 +26,14 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(css|scss)$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      },
     ],
   },
   resolve: {
@@ -45,5 +53,12 @@ module.exports = {
   ],
   devServer: {
     contentBase: './dist',
+    proxy: {
+      "/b/5cae9a54fb42337645ebcad3": {
+        target: 'https://api.jsonbin.io',
+        changeOrigin: true,
+        secure: true,
+      },
+    }
   },
 };

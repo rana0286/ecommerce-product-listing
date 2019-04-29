@@ -4,6 +4,7 @@ $header-background-color: #def1f4;
   background-color: $header-background-color;
   display: flex;
   justify-content: space-between;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  align-items: center;
+  padding: 15px 10px;
+  margin: 30px 0 10px;
 }
