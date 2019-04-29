@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/composer/ProductDetailsRoot ProductDetailsRoot component should render 1`] = `
+<div>
+  <div
+    className="product-list-header"
+  >
+    <div
+      className="product-list-header__heading"
+    >
+      <h2
+        className="heading heading--h2"
+      >
+        Test
+      </h2>
+    </div>
+    <div
+      className="product-list-header__filter"
+    >
+      <div
+        className="select-box "
+      >
+        <label
+          className="select-box__label"
+          htmlFor="select-box"
+        >
+          
+        </label>
+        <select
+          className="select-box__select"
+          id="select-box"
+          onChange={[Function]}
+          onSelect={[MockFunction]}
+          selected=""
+          value=""
+        >
+          <option
+            value="Test"
+          >
+            Test
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <ul
+    className="product-list"
+  >
+    <li
+      className="card"
+    >
+      <img
+        className="image"
+        src="./assets/img/products/undefined"
+      />
+      <div
+        className="product"
+      >
+        <div
+          className="tag"
+        />
+        <div
+          className="description"
+        >
+          <div
+            className="description__name"
+          />
+          <div
+            className="description__price"
+          />
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

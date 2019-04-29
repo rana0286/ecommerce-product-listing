@@ -3,8 +3,8 @@ import { shallow } from 'enzyme';
 import Heading from './Heading';
 import renderer from 'react-test-renderer';
 
-describe('src/components/elements/Header', () => {
-  it('Header component should render', () => {
+describe('src/components/elements/Heading', () => {
+  it('Heading component should render', () => {
     const component = shallow(<Heading Variation="h1">Test heading</Heading>);
     const tree = renderer.
       create(<Heading Variation="h2">Test heading</Heading>)

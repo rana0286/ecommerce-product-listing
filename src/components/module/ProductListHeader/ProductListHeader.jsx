@@ -9,7 +9,7 @@ class ProductListHeader extends PureComponent {
   render() {
     return (<Header>
       <div className="product-list-header__heading">
-        <ProductsListHeading  headingLabel={this.props.headingLabel} />
+        <ProductsListHeading headingLabel={this.props.headingLabel} />
       </div>
       <div className="product-list-header__filter">
         <ProductsSizeFilter onSelect={this.props.onSelect} options={this.props.productSizeOptions} />

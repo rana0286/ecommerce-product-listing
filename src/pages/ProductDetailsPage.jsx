@@ -9,7 +9,7 @@ import { getProductDetails, filterProductDetails } from '../actions';
 
 import './ProductDetailsPage.scss';
 
-class ProductDetailsPage extends Component {
+export class ProductDetailsPage extends Component {
   constructor(props) {
     super(props);
     this.filterProducts = this.filterProducts.bind(this);
@@ -53,7 +53,6 @@ ProductDetailsPage.defaultValue = {
 };
 
 export const mapStateToProps = ({filteredProductList}) => {
-  console.log(filteredProductList);
   return { filteredProductList };
 };
 

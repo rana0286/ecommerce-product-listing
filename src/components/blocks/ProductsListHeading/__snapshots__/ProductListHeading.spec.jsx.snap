@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/blocks/ProductListHeading ProductListHeading component should render with h2 1`] = `
+<h2
+  className="heading heading--h2"
+>
+  Test
+</h2>
+`;

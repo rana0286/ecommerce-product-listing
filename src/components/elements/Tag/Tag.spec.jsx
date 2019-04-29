@@ -3,8 +3,8 @@ import { shallow } from 'enzyme';
 import Tag from './Tag';
 import renderer from 'react-test-renderer';
 
-describe('src/components/elements/Header', () => {
-  it('Header component should render', () => {
+describe('src/components/elements/Tag', () => {
+  it('Tag component should render', () => {
     const component = shallow(<Tag  tagType="sale" tagLabel="sale" />);
     const tree = renderer.
       create(<Tag tagType="exclusive" tagLabel="exclusive"/>)

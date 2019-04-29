@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/components/module/ProductsDetailsList ProductsDetailsList component should render 1`] = `
+<ul
+  className="product-list"
+>
+  <li
+    className="card"
+  >
+    <img
+      alt="Striped shirt"
+      className="image"
+      src="./assets/img/products/product-1.jpg"
+    />
+    <div
+      className="product"
+    >
+      <div
+        className="tag"
+      >
+        <div
+          className="tag--sale"
+        >
+          Sale
+        </div>
+      </div>
+      <div
+        className="description"
+      >
+        <div
+          className="description__name"
+        >
+          Striped shirt
+        </div>
+        <div
+          className="description__price"
+        >
+          $18.88
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    className="card"
+  >
+    <img
+      alt="Denim shirt"
+      className="image"
+      src="./assets/img/products/product-2.jpg"
+    />
+    <div
+      className="product"
+    >
+      <div
+        className="tag"
+      />
+      <div
+        className="description"
+      >
+        <div
+          className="description__name"
+        >
+          Denim shirt
+        </div>
+        <div
+          className="description__price"
+        >
+          $25.44
+        </div>
+      </div>
+    </div>
+  </li>
+  <li
+    className="card"
+  >
+    <img
+      alt="Plain cotton t-shirt"
+      className="image"
+      src="./assets/img/products/product-3.jpg"
+    />
+    <div
+      className="product"
+    >
+      <div
+        className="tag"
+      >
+        <div
+          className="tag--exclusive"
+        >
+          Exclusive
+        </div>
+      </div>
+      <div
+        className="description"
+      >
+        <div
+          className="description__name"
+        >
+          Plain cotton t-shirt
+        </div>
+        <div
+          className="description__price"
+        >
+          $12.93
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+`;

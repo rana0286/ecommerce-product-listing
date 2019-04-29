@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`src/components/elements/Header Header component should render 1`] = `
+exports[`src/components/elements/Heading Heading component should render 1`] = `
 <h1
   Variation="h2"
   className="heading heading--h1"

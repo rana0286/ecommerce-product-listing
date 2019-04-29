@@ -3,8 +3,8 @@ import { shallow } from 'enzyme';
 import Image from './Image';
 import renderer from 'react-test-renderer';
 
-describe('src/components/elements/Header', () => {
-  it('Header component should render', () => {
+describe('src/components/elements/Image', () => {
+  it('Image component should render', () => {
     const component = shallow(<Image src="/testPath" alt="image default" />);
     const tree = renderer.
       create(<Image src="/testPath" alt="image default" />)
