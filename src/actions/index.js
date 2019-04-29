@@ -1,7 +1,8 @@
 import 'whatwg-fetch';
-import { FILTER_PRODUCT_DETAILS, SET_PPRODUCT_DETAILS} from './actionTypes.js';
-import { apiEndPoints } from '../constants';
+import { apiEndPoints, ActionTypes } from '../constants';
+import { filterData } from '../utils';
 
+//  async action to fetch the product details
 export const getProductDetails = () => (dispatch) =>
   fetch(apiEndPoints.getProductDetails)
     .then(response => response.json())
@@ -10,29 +11,25 @@ export const getProductDetails = () => (dispatch) =>
       dispatch(filterProductDetails());
     });
 
+//  Action to set the product details in store
 export function setProductDetails(productsList) {
   return {
-    type: 'SET_PPRODUCT_DETAILS',
+    type: ActionTypes.SET_PPRODUCT_DETAILS,
     productsList,
   };
 }
 
+//  Action to set filtered product details in store
 export function setFilteredData(filteredProductList) {
   return {
-    type: 'FILTER_PRODUCT_DETAILS',
+    type: ActionTypes.SET_FILTERED_PRODUCT_DETAILS,
     filteredProductList,
   };
 }
 
+// Action to filter the product details based on selected selected size
 export const filterProductDetails = (selectedFilter = '') => (dispatch, getState) => {
   const { productsList } = getState();
   const filteredDetails = filterData(selectedFilter, productsList);
   dispatch(setFilteredData(filteredDetails));
 };
-
-export const filterData = (selectedFilter, products = []) => {
-  return selectedFilter ?
-    products.filter(product => product.size.includes(selectedFilter)):
-    products;
-};
-
