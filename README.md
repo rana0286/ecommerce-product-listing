@@ -26,6 +26,7 @@
 - eslint for JavaScript linting
 - sass-lint for sass linting
 - scss to write the css with BEM convention
+- Node v10 for build and automation
 
 ## Code quality
 - sass lint issue 0
