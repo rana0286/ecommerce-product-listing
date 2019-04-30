@@ -44,7 +44,7 @@
 - Accessibility check
 - Integration (BDD)
 - CI/CD implementation
-- Can be us styled-components
+- Can be used styled-components
 
 ## Why not SSR
 - Pros and cons of CSR and SRR are debatable
