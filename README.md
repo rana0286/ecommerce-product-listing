@@ -32,6 +32,7 @@
 - sass lint issue 0
 - eslint issue 0 (On cuurrent config of eslint)
 - Components unit test coverage is 95%
+- pre commit hooks (using husky) to run linting and unit test cases
 
 ## Further Improvements
 - Handle errors and exceptions from single place
