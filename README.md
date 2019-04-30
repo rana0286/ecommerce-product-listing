@@ -4,5 +4,5 @@
 - git clone https://github.com/rana0286/ecommerce-product-listing.git
 - cd ecommerce-product-listing
 - yarn install or npm i
-- yarn run dev or npm run dev
-- open URL http://localhost:8081/ in browser
+- yarn start or npm run start
+- open URL http://localhost:8080/ in browser
