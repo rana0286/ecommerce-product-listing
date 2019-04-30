@@ -2,11 +2,11 @@ import React, { Component, Suspense, lazy } from 'react';
 import PropTypes from 'prop-types';
 import noop from 'lodash/noop';
 import { connect } from 'react-redux';
-import { copyProvider } from '../utils';
-import { productSizeOptions } from '../constants';
-import { getProductDetails, filterProductDetails } from '../actions';
+import { copyProvider } from 'utils';
+import { productSizeOptions } from 'constants';
+import { getProductDetails, filterProductDetails } from 'actions';
 
-const ProductDetailsRoot = lazy(() => import('../components/composer'));
+const ProductDetailsRoot = lazy(() => import('components/composer'));
 
 import './ProductDetailsPage.scss';
 

@@ -17,7 +17,7 @@ module.exports = {
     '!**/node_modules/**',
     '!**/*.spec.{js,jsx}',
   ],
-  coveragePathIgnorePatterns:[
+  coveragePathIgnorePatterns: [
     '/src/components/elements/Dropdown/__snapshots__',
     '/src/components/elements/Header/__snapshots__',
     '/src/components/elements/Heading/__snapshots__',
@@ -45,8 +45,13 @@ module.exports = {
   },
   moduleNameMapper: {
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-     "<rootDir>/__mocks__/fileMock.js",
-    "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
+      "<rootDir>/__mocks__/fileMock.js",
+    "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js",
+    "^assets(.*)$": "<rootDir>/src/assets$1",
+    "^components(.*)$": "<rootDir>/src/components$1",
+    "^utils(.*)$": "<rootDir>/src/utils$1",
+    "^constants(.*)$": "<rootDir>/src/constants$1",
+    "^actions(.*)$": "<rootDir>/src/actions$1",
   },
   testMatch: ['**/?(*.)+(spec|test).(js|jsx)?(x)'],
   // An array of file extensions which modules are using

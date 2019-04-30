@@ -27,4 +27,21 @@
 - sass-lint for sass linting
 - scss to write the css with BEM convention
 
+## Code quality
+- sass lint issue 0
+- eslint issue 0 (On cuurrent config of eslint)
+- Components unit test coverage is 95%
+
+## Further Improvements
+- Handle errors and exceptions from single place
+- i18n
+- Performance check
+- Accessibility check
+- Integration (BDD)
+- CI/CD implementation
+- Can be us styled-components
+
+## Why not SSR
+- No black and white distiction between SSR and CSR
+- Pros and cons of CSR and SRR are debatable
 

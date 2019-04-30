@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { mount, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import ConnectedComponent, { ProductDetailsPage } from './ProductDetailsPage';
 import renderer from 'react-test-renderer';
 

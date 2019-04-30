@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { ActionTypes } from '../constants';
+import { ActionTypes } from 'constants';
 
 //  Pure function reducer used to set the product details in state
 

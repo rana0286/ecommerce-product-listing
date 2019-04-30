@@ -37,7 +37,18 @@ module.exports = {
     ],
   },
   resolve: {
+    modules: ['node_modules'],
     extensions: ['*', '.js', '.jsx'],
+    alias: {
+      actions: path.resolve(`${process.cwd()}`, 'src/actions'),
+      assets: path.resolve(`${process.cwd()}`, 'src/assets'),
+      components: path.resolve(`${process.cwd()}`, 'src/components'),
+      constants: path.resolve(`${process.cwd()}`, 'src/constants'),
+      pages: path.resolve(`${process.cwd()}`, 'src/pages'),
+      reducers: path.resolve(`${process.cwd()}`, 'src/reducers'),
+      store: path.resolve(`${process.cwd()}`, 'src/store'),
+      utils: path.resolve(`${process.cwd()}`, 'src/utils'),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({

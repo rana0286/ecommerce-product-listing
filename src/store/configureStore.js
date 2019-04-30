@@ -4,6 +4,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 import rootReducer from '../reducers';
 
+//  Redux atore configuration for app
 export default function configureStore(preloadedState) {
   const middlewares = [thunkMiddleware];
   const middlewareEnhancer = applyMiddleware(...middlewares);

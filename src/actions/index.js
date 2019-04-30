@@ -1,6 +1,6 @@
 import 'whatwg-fetch';
-import { apiEndPoints, ActionTypes } from '../constants';
-import { filterData } from '../utils';
+import { apiEndPoints, ActionTypes } from 'constants';
+import { filterData } from 'utils';
 
 //  async action to fetch the product details
 export const getProductDetails = () => (dispatch) =>

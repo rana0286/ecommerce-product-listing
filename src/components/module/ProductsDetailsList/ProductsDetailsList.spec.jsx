@@ -52,7 +52,7 @@ describe('src/components/module/ProductsDetailsList', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('ProductsDetailsList should render 2 product card', () => {
+  it('ProductsDetailsList should render 3 product card', () => {
     const component = mount(componentRenderer({productsList: produtList}));
     expect(component.find(ProductDetailsCard).length).toBe(3);
   });
