@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "npm run build && webpack-dev-server --open --hot --mode development",
-    "build": "rm -rf dist && webpack --mode development",
+    "build": "rm -rf dist && webpack --mode production",
     "test": "npm run lint && npm run sass-lint && jest --config",
     "lint": "eslint src -c .eslintrc.js",
     "sass-lint": "sass-lint -c ./.sass-lint.yml '**/*.scss' -v -q"
@@ -25,13 +25,10 @@
     "url": "https://github.com/rana0286/ecommerce-product-listing/issues"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
-    "@babel/node": "^7.2.2",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.4.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.7.1",
     "babel-loader": "^8.0.5",
@@ -47,24 +44,17 @@
     "husky": "^2.1.0",
     "jest": "^24.7.1",
     "jest-html-reporter": "^2.5.0",
-    "mini-css-extract-plugin": "^0.6.0",
     "node-sass": "^4.12.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "react-test-renderer": "^16.8.6",
     "redux-devtools-extension": "^2.13.8",
     "sass-lint": "^1.13.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^2.1.2",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1",
-    "webpack-dev-server": "^3.3.1",
-    "webpack-merge": "^4.2.1",
-    "webpack-visualizer-plugin": "^0.1.11"
+    "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "classnames": "^2.2.6",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "lodash": "^4.17.11",
@@ -74,7 +64,6 @@
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
-    "styled-components": "^4.2.0",
     "whatwg-fetch": "^3.0.0"
   }
 }
