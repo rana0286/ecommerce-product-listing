@@ -6,6 +6,9 @@
 - yarn install or npm i
 - yarn start or npm run start
 - open URL http://localhost:8080/ in browser
+- npm run test to run the unit test with eslint and sass-lint check
+- npm run lint for JavaScript/React linting
+- npm run sass-lint for sass linting
 
 
 ## Architecure and principle
