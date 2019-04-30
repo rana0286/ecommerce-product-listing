@@ -27,6 +27,9 @@
 - sass-lint for sass linting
 - scss to write the css with BEM convention
 - Node v10 for build and automation
+- No Boilerplate used
+- No any react app creater used
+- All the config for build, unit test, linting has been done from scratch
 
 ## Code quality
 - sass lint issue 0
