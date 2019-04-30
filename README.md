@@ -47,6 +47,5 @@
 - Can be us styled-components
 
 ## Why not SSR
-- No black and white distiction between SSR and CSR
 - Pros and cons of CSR and SRR are debatable
 
